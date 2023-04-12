@@ -7,11 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face{
+  font-family: "Walkaway";
+  src: url("../Walkway_Black.ttf");
 }
 
+@font-face{
+  font-family: "Walkaway-ext";
+  src: url("../Walkway ExpandUltraBold.ttf");
+}
+
+body {
+  color: white;
+  font-family: "Walkaway";
+  font-size: 32px;
+}
 #button {
   font-size: 24px;
   margin-left: 10vw;

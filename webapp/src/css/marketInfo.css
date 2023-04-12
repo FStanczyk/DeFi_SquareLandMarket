@@ -1,0 +1,37 @@
+.marketInfo_landInfo{
+    display: grid;
+    /*  -------------
+    |  coordinates  |
+    -----------------
+    |  purchaseInfo |
+    -----------------  
+    |     Owner     |
+    ----------------- */
+    grid-template-rows: 15% 75% 10%;
+
+    height: 70%;
+    width: 80%;
+
+    border: solid 4px rgb(211, 25, 0);
+}
+
+.landInfo__coordinates{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;;
+}
+
+.landInfo__owner{
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    margin-inline: 5%;
+    padding-inline: 5%;
+}
+
+.coordinates_box{
+    text-align: center;
+    border: solid 4px white;
+    width:40%;
+    height: 50%;
+}

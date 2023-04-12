@@ -1,7 +1,6 @@
 {
   "name": "defi_sampler",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +16,17 @@
     "hardhat-gas-reporter": "^1.0.9"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.7.3"
-  }
+    "@openzeppelin/contracts": "^4.7.3",
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FStanczyk/DeFi_webapp_sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FStanczyk/DeFi_webapp_sample/issues"
+  },
+  "homepage": "https://github.com/FStanczyk/DeFi_webapp_sample#readme",
+  "description": ""
 }

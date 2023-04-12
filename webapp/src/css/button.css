@@ -1,0 +1,18 @@
+
+.button_standard{
+    text-align: center;
+    width: 14vw;
+    height: 4vh;
+    border: solid 4px white; 
+    transition: width 0.2s;
+    cursor:pointer;
+}
+
+.button_standard:hover{
+    border:solid 4px rgb(211, 25, 0); 
+    width: 17vw;
+}
+
+#button_colorText{
+    color: rgb(211, 25, 0);
+}

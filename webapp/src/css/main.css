@@ -1,0 +1,139 @@
+
+.main_master{
+    display: grid;
+    height: 110vh;
+/*  ------------------------------
+    |          logo              |
+    ------------------------------
+    |          navbar            |
+    ------------------------------    
+    |                            |
+    |          sub               |
+    |                            |
+    -----------------------------| */
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 6% 84%;
+    background-color: black;
+    cursor: default;
+}
+
+.main_logo{
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    margin-inline: auto;
+    font-family: "Walkaway-ext";
+    font-size: 100px;
+}
+
+.main_navbar{
+    grid-row-start: 2;
+    height: 100%;
+    border-top: solid 4px white;
+
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3vw;
+    padding-top: 0.5vh;
+}
+
+.main_sub{
+    grid-row-start: 3;
+
+    display: grid;
+  /*|-------------------|--------|
+    |                   |        |
+    |     map           |  btn   |
+    |                   |        |
+    |                   |        |
+    --------------------|---------    
+    |     footer        |  sdm   |
+    |-------------------|--------| */
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 90% 10%;
+}
+
+.main_sub_mainPanel{
+    border-top: solid 4px white;
+    display: grid;
+    /*--------------------
+              |
+              |
+        info  | map
+              |
+      -------------------- */
+      grid-template-columns: 30% 70%;
+}
+
+.main_sub_mainPanel_marketInfo{
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_sub_mainPanel_map{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_sub_buttonPanel{
+    border-left: solid 4px white;
+    border-top: solid 4px white;
+    padding: 2%;
+    font-size: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+
+}
+#address{
+    color: rgb(211, 25, 0); 
+}
+
+.main_sub_askSDM{
+    grid-row: 2;
+    grid-column: 2;
+    border-top: solid 4px white;
+    border-left: solid 4px white;
+
+}
+
+.main_sub_footer{
+    grid-row: 2;
+    grid-column: 1;
+    border-top: solid 4px white;
+}
+
+.map_main{
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+#map_mainText{
+    /* margin-bottom: 57vh; */
+}
+
+.map_main__square{
+    background-color: black;
+    transition: background-color 0.2s;
+}
+
+.map_main__square:hover{
+    background-color: rgb(211, 25, 0); 
+}
+
+
+.buttonPanel_buttons{
+    margin-top: 30%;
+    display: flex;
+    height: max-content; 
+    gap: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
