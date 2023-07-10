@@ -6,7 +6,7 @@ import "../contracts/Land.sol";
 contract Land is SquareLand{
     address immutable public owner;
     
-    // Rows * Columns = how many square lands will beon the map
+    // Rows * Columns = how many square lands will be on the map
     uint256 constant public rows = 8;
     uint256 constant public columns = 12;
 
